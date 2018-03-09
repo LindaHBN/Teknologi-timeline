@@ -1,0 +1,270 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: radial-gradient(grey, black);
+    background: -webkit-radial-gradient(grey, black)
+}
+
+img, #container div{
+    position: absolute;
+}
+
+
+/*Header med tilbakeknapp*/
+#header {
+    position: relative;
+    width: inherit;
+    height: 50px;
+    color: white;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 0px;
+}
+
+#header_tekst {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: -15px;
+    font-family: sans-serif;
+}
+
+#back {
+    left: 10px;
+    position: absolute;
+    height: 30px;
+    top: 10px;
+} /*Header ferdig*/
+
+#container {
+    position: relative;
+    margin: auto;
+    height: 600px;
+    width: 978px;
+}
+
+
+/*tekstboks på siden*/
+#description {
+    width: 300px;
+    padding: 20px;
+    top: 10px;
+    left:-150px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    
+} /*tekstboks ferdig*/
+
+#echo {
+    height: 150px;
+    left: 470px;
+    bottom: 220px;
+}
+
+#asimo {
+    height: 200px;
+    bottom: 0px;
+    left: 430px;
+    
+}
+
+
+/*kode for alle tekstbobler*/
+.textbox{
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.turn_on{
+    left: 250px;
+    bottom: 150px;
+}
+
+.turning_on{
+    left: 530px;
+    bottom: 330px;
+} /*alle tekstbobler ferdig*/
+
+
+/* hoved-animasjonen */
+@keyframes appear {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+-webkit-@keyframes appear {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/*tv*/
+#tv_container{
+    padding: 10px;
+    left: 370px;
+    top: 30px;
+    height: 150px;
+    width: 240px;
+}
+
+#tv {
+    height: 150px;
+}
+
+#netflix_logo {
+    height: 60px;
+    padding: 60px;
+    left: -20px;
+    top: -10px;
+    opacity: 0;
+    animation: appear 2s 3s forwards paused;
+    -webkit-animation: appear 2s 3s forwards paused;
+}
+
+
+/*animasjoner til tv*/
+#tv_container:hover  #netflix_logo {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+
+/*tekst til tv*/
+#netflix_off{
+    opacity: 0;
+    animation: appear 2s 1s paused;
+    -webkit-animation: appear 2s 1s paused;
+}
+
+#netflix_on{
+    opacity: 0;
+    animation: appear 2s 3s paused;
+    -webkit-animation: appear 2s 3s paused;
+}
+
+/*animasjon til tekst*/
+#tv_container:hover ~ #netflix_off{
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+#tv_container:hover ~ #netflix_on{
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+} /*tv ferdig*/
+
+
+/*Spotify logo*/
+#spotify{
+    left: 700px;
+    bottom: 220px;
+    padding: 10px;
+    height: 130px;
+    width: 130px;
+}
+
+#spotify_logo_off {
+    height: 130px;
+}
+
+#spotify_logo_on {
+    height: 130px;
+    opacity: 0;
+    animation: appear 2s 3s forwards paused;
+    -webkit-animation: appear 2s 3s forwards paused;
+}
+
+
+/*animasjoner til spotify*/
+#spotify:hover  #spotify_logo_on {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+/*tekst til spotify*/
+#spotify_off{
+    opacity: 0;
+    animation: appear 2s 1s paused;
+    -webkit-animation: appear 2s 1s paused;
+}
+
+#spotify_on{
+    opacity: 0;
+    animation: appear 2s 3s paused;
+    -webkit-animation: appear 2s 3s paused;
+}
+
+
+/*animasjon til tekst*/
+#spotify:hover ~ #spotify_off{
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+#spotify:hover ~ #spotify_on{
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+} /*spotify ferdig*/
+
+
+/*lyspære*/
+#phillips {
+    width: 100px;
+    padding: 10px;
+    height: 150px;
+    bottom: 200px;
+    left: 150px;
+}
+
+#phillips_off {
+    height: 150px;   
+}
+
+#phillips_on {
+    height: 150px;
+    padding: 20px;
+    left: -10px;
+    top: -10px;
+    opacity: 0;
+    animation: appear 2s 3s forwards paused;
+    -webkit-animation: appear 2s 3s forwards paused;
+}
+
+
+/*animasjoner til lyspære*/
+#phillips:hover  #phillips_on {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+
+/*tekst til lyspære*/
+#light_off{
+    opacity: 0;
+    animation: appear 2s 1s paused;
+    -webkit-animation: appear 2s 1s paused;
+}
+
+#light_on{
+    opacity: 0;
+    animation: appear 2s 3s paused;
+    -webkit-animation: appear 2s 3s paused;
+}
+
+
+/*animasjon til tekst*/
+#phillips:hover ~ #light_off{
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+#phillips:hover ~ #light_on{
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+} /*lyspære slutt*/

@@ -1,0 +1,300 @@
+    body {
+        margin: 0;
+        background-color: black;
+}
+
+    h1 {
+        color: black;  
+}
+
+    #container {
+        position: relative;
+        width: 1200px;
+        height: 580px;
+        background-color: black;
+        margin: auto;
+        overflow: hidden;
+        background-image: url(../../Bilder/science_fiction/Earth.jpg);   
+}
+
+
+/* TEKST UNDER CD START */
+    .cdtext{ 
+        font-size: 0.9em;
+        font-weight: bold;
+        color: wheat;
+        font-family: sans-serif;
+}
+/* TEKST UNDER CD SLUTT */
+
+
+/* RØD TEKST V/ ROBOT START */
+    .robottext {
+        color: red;
+        font-family: sans-serif;
+        font-size: 0.85em;
+        font-weight: bold;
+        display: block;
+        opacity: 0;
+        position: absolute;
+}
+/* RØD TEKST v/ CD SLUTT */
+
+
+/* MATRIX START */
+    #matrix {
+        height: 160px;
+        position: absolute;
+        left: 0px;
+        top: 300px;
+        cursor: pointer; 
+}
+
+     #matrix_robot{
+        height: 200px;
+        position: absolute;
+        top: 90px;
+        right: 1020px;
+        opacity: 0;
+}     
+
+    #matrix:hover ~ #matrix_robot{
+        opacity: 1;
+}
+
+    #matrix_tekst {
+        margin-top: 33em;
+        margin-bottom: 0em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;     
+}
+
+    #matrix_red {
+        top: 100px;
+        left: 100px;
+        right: 70px; 
+}
+
+    #matrix:hover ~ #matrix_red {
+            opacity: 1;       
+}
+/*MATRIX SLUTT*/
+
+
+
+/* ROBOCOP START */
+    #robocop {
+        height: 170px;
+        position: absolute;
+        left: 200px;
+        top: 300px; 
+        cursor: pointer; 
+}
+
+    #robocop_robot {
+        height: 200px;
+        position: absolute;
+        top: 90px;
+        right: 840px; 
+        opacity: 0;
+}
+
+    #robocop:hover ~ #robocop_robot{
+        opacity: 1;
+}
+
+    #robocop_tekst {
+        margin-left: 15.5em;
+        margin-right: 15.5em;
+        margin-top: -1.1em;     
+}
+
+    #robocop_red {
+        top: 50px;
+        left: 255px;
+        right: 70px;
+}
+
+  #robocop:hover ~ #robocop_red {
+            opacity: 1;  
+}
+/*ROBOCOP SLUTT*/
+
+
+/* TRON START */
+    #tron {
+        height: 160px;
+        position: absolute;
+        left: 400px;
+        top: 300px;
+        cursor: pointer; 
+}
+    #tron_robot {
+        height: 150px;
+        position: absolute;
+        top: 150px;
+        right: 650px;
+        opacity: 0;
+}
+    #tron:hover ~ #tron_robot {
+        opacity: 1;
+}
+    #tron_tekst {
+        margin-left: 31em;
+        margin-right: 31em;
+        margin-top: -2.45em;
+}
+
+    #tron_red {
+        top: 150px;
+        left: 450px;
+        right: 70px;
+}
+
+    #tron:hover ~ #tron_red {
+            opacity: 1;
+}
+/*TRON SLUTT*/
+
+
+/* TERMINATOR START */
+    #terminator {
+        height: 160px;
+        position: absolute;
+        left: 600px;
+        top: 300px;
+        cursor: pointer; 
+}
+    #terminator_robot {
+        height: 200px;
+        position: absolute;
+        top: 90px;
+        right: 485px;
+        opacity: 0;
+}
+    #terminator:hover ~ #terminator_robot {
+        opacity: 1;
+}
+    #terminator_tekst {
+        margin-left: 43em;
+        margin-top: -2.5em;
+}
+
+    #terminator_red {
+        top: 150px;
+        left: 710px;
+        right: 70px;
+}
+
+    #terminator:hover ~ #terminator_red {
+            opacity: 1;       
+}
+/*TERMINATOR SLUTT*/
+
+
+/* HITCHHIKERS GUIDE START */
+    #hitch {
+        height: 160px;
+        position: absolute;
+        left: 800px;
+        top: 300px;
+        cursor: pointer;
+}
+
+    #hitch_robot {
+        height: 170px;
+        position: absolute;
+        top: 130px;
+        right: 235px;
+        opacity: 0;
+}
+
+    #hitch:hover ~ #hitch_robot {
+        opacity: 1;
+} 
+
+    #hitch_tekst {
+        margin-left: 56em;
+        margin-right: 56em;
+        margin-top: -2.40em;
+        width: 160px;
+}
+
+    #hitch_red {
+        top: 90px;
+        left: 865px;
+        right: 70px;
+}
+
+   #hitch:hover ~ #hitch_red {
+            opacity: 1;
+}
+/*HITCHHIKERS GUIDE SLUTT*/
+
+
+/* PORTAL START*/
+    #portal {
+        height: 160px;
+        position: absolute;
+        left: 1000px;
+        top: 300px;  
+        cursor: pointer; 
+}
+    #portal_robot {
+        height: 170px;
+        position: absolute;
+        top: 138px; 
+        right: 35px;
+        opacity: 0;
+}
+    #portal:hover ~ #portal_robot {
+        opacity: 1;
+} 
+    #portal_tekst {
+        margin-left: 72em;
+        margin-top: -3em;
+}
+
+    #portal_red {
+        top: 145px;
+        left: 1100px;
+        right: 70px;
+}
+    
+    #portal:hover ~ #portal_red {
+            opacity: 1;
+} 
+/*PORTAL SLUTT*/
+
+
+/*HEADER MED TILBAKEKNAPP*/
+    h1 {
+        color: white;
+}
+
+    #header {
+        position: relative;
+        width: inherit;
+        height: 50px;
+        color: white;
+        z-index: 1;
+        background-color: black;
+        opacity: 0.9;
+        margin-top: 0px;
+}
+
+    #header_tekst {
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        top: -15px;
+        font-family: sans-serif;
+}
+
+    #back {
+        left: 10px;
+        position: absolute;
+        height: 30px;
+        top: 10px;
+}
+/*END OF CODE*/

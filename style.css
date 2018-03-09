@@ -1,0 +1,100 @@
+body, html{
+    height: 100%;
+    margin: 0px;
+}
+
+.container {
+    background: url(../Bilder/diverse/stars.jpg);
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: yellow;
+    overflow: hidden;
+    position: relative;
+}
+.inner_container{
+    margin-left: auto;
+    margin-right: auto;      
+    position: absolute;
+    z-index: 3;
+    width: 98%;
+    height: 50em;
+    bottom: 0;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(350px) rotateX(25deg);
+}
+
+.inner_container:after {
+    position: absolute;
+    top: 0;
+    bottom: 60%;
+    background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+}
+
+/* Blå Introtekst*/
+p.blue_text {
+    position: relative;
+    max-width: 16em;
+    font-size: 200%;
+    font-weight: 400;
+    margin: 20% auto;
+    color: aqua;
+    opacity: 0;
+    z-index: 1;
+    text-align: center;
+    animation: intro 3.5s ease-out;  
+}
+
+/*Knapp til neste side*/
+.button {
+    color: yellow;
+    border: 12px solid yellow;
+    padding: 20px;
+    background: transparent;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+}
+
+.button:active, .button:focus {
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+}
+/*Knapp til neste side-slutt*/
+
+.roll {
+    position: absolute;
+    top: 100%;
+    animation: scroll 120s linear 3.5s forwards;
+}
+
+.roll > .roll-header {
+    text-align: center;
+}
+
+/*Animasjoner*/
+
+@keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+/*Animasjoner-slutt*/

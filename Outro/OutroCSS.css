@@ -1,0 +1,253 @@
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../../Bilder/diverse/stars.jpg);
+
+}
+
+/*container kode starter*/
+
+#container {
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
+
+
+#container * {
+    position: absolute;
+}
+
+/*konteiner kode slutter*/
+
+
+/*tilbakeknapp */
+#header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    color: black;
+    z-index: 1;
+    opacity: 0.9;
+    margin-top: -8px;
+    margin-left: -9px;
+}
+
+#back{
+    height: 30px;
+    padding: 20px;
+}
+
+
+/*Eksplosjon kode starter*/
+
+#eksplosjon {
+    left: 600px;
+    height:1px; 
+    top: 300px;
+    animation-name: eksplosjon;
+    animation-duration:1.5s;
+    opacity: 0; 
+ 
+}
+/* Eksplosjon kode slutter*/
+
+#the_end{
+    opacity: 0;
+    color: white;
+    font-size: 8.5em;
+    font-family: sans-serif;
+    left: 50%;
+    margin-left:-500px;
+    top: 180px;
+    animation: the_end 3s 7s forwards;
+}
+
+
+/*Kode til robotene starter*/
+
+#asimo{
+    transform: scaleX(-1);
+    right: -500px;
+    bottom: 0px;
+    animation: asimo 6s 5s forwards;
+    
+}
+
+.robot{
+    opacity: 0;
+    top:215px;
+    height: 100px;
+    animation-name: synlig;
+    animation-duration:10s;
+    animation-fill-mode: forwards;
+}
+
+#terminator1 {
+    left:400px;
+    animation-delay: 0s;
+}
+
+#terminator2 {
+    left:200px;
+    animation-delay: 0.5s;
+}
+
+#terminator3 {
+    left:300px;
+    animation-delay: 1s;
+}
+
+#terminator4 {
+    left:800px;
+    animation-delay: 1.2s;
+}
+
+#terminator5 {
+    left:560px;
+    animation-delay: 0.5s;
+}
+
+#furby1 {
+    left:600px;
+    animation-delay: 0s;
+}
+
+#furby2 {
+    left:900px;
+    animation-delay: 1.3s;
+}
+
+#furby3 {
+    left:700px;
+    animation-delay: 1.8s;
+}
+
+#white_guy1 {
+    left: 215px;
+    animation-delay: 0s;
+}
+
+#white_guy2 {
+    left: 400px;
+    animation-delay: 2s;
+}
+
+#robo_cop1 {
+    left:345px;
+    animation-delay: 0.4s;
+}
+
+#robo_cop2 {
+    left:900px;
+    animation-delay: 1.1s;
+}
+
+#robo_dog1 {
+    left:480px;
+    animation-delay: 1s;
+}
+
+#robo_dog2 {
+    left:830px;
+    animation-delay: 0.2s;
+}
+
+/*kode til robotene slutter*/
+
+
+/* Animation kode starter*/
+
+@keyframes asimo {
+    from {right: -500px;}
+    to{right: 2000px;}
+}
+
+@keyframes eksplosjon {
+   0%
+    {
+        opacity: 0;
+        left: 600px;
+        height: 1px;
+        top: 300px;
+    }
+    
+    50%
+    {
+        opacity: 1;
+        left: 50px;
+        height:800px; 
+        top: -50px;
+    }
+
+    70%
+    {
+        opacity: 1;
+        left: 50px;
+        height:800px;
+        top: -50px;
+    } 
+    100%{opacity: 0;
+        left: 50px;
+        height:800px;
+        top: -50px;}
+}
+    
+
+@keyframes synlig {
+        0% {
+            opacity: 0; 
+            height: 100px;
+        }  
+
+
+        10% {
+            opacity: 0;
+            height: 100px;
+        }
+
+        20%{
+            opacity: 1;
+            height: 100px;
+        }
+        30%{
+            opacity: 1;
+            height: 150px;
+            transform: rotate(20deg);
+        }
+
+        40% {
+            opacity: 1;
+            height: 150px;
+            transform: rotate(0deg);
+        }
+
+        60% {
+            opacity: 1;
+            transform: rotate(30deg);
+        }
+
+        100%{
+            opacity: 1;
+            height: 300px;
+        }
+    
+    
+    }
+    
+
+@keyframes the_end{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/*Animation kode slutter*/ 
+    
+    
+   
+/*End of kode*/
+    
+}

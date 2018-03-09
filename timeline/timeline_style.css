@@ -1,0 +1,369 @@
+body, html{
+    background-image: url(../../Bilder/diverse/stars.jpg);
+    top: -8px;
+}
+img, p {
+    position: absolute;
+}
+
+
+/* Header med tilbakeknapp */
+#header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    color: black;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.9;
+    margin-top: -8px;
+    margin-left: -9px;
+}
+#header_tekst {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -50px;
+    top: -15px;
+    font-family: sans-serif;
+}
+#back {
+    left: 10px;
+    position: absolute;
+    height: 30px;
+    top: 10px;
+}
+
+
+/* Container */
+#container {
+    width: 4000px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    margin-left: -8px;
+    padding-bottom: 20px;
+    top: 40px;
+}
+
+
+/* Bilder */
+#timeline {
+    top: 20px;
+    left: -25px;
+}
+#asimo {
+    position: fixed;
+    top: 220px;
+    height: 180px;
+    left: 290px;
+    animation: asimofloat 8s infinite;
+    z-index: 1;
+}
+#turingtest {
+    width: 150px;
+    top: 380px;
+    left: 258px;
+    border-radius: 10px;
+}
+#mitai {
+    position: absolute;
+    width: 180px;
+    top: 40px;
+    left: 650px;
+    border-radius: 20px;
+}
+#eliza {
+    width: 300px;
+    left: 860px;
+    top: 30px;
+    border-radius: 2px;
+}
+#backgammon {
+    top: 390px;
+    left: 970px;
+    width: 250px;
+}
+#polly {
+    height: 200px;
+    left: 1240px;
+    top: 5px;
+    border-radius: 10px;
+}
+#car1 {
+    left: 1300px;
+    top: 430px;
+    transform: scaleX(-1)
+}
+#dino {
+    left: 1400px;
+    width: 250px;
+}
+#furby {
+    left: 1670px;
+    width: 200px;
+}
+#robodog {
+    left: 1880px;
+    width: 200px;
+}
+#movieclapper{
+    left: 1680px;
+    top: 400px;
+    width: 170px;
+}
+#roomba {
+    left: 1936px;
+    top: 400px;
+    width: 180px;
+}
+#mars {
+    left: 2140px;
+    height: 150px;
+    top: 10px;
+    border-radius: 10px
+}
+#asimo2 {
+    left: 2380px;
+    top: 10px;
+    height: 200px;
+}
+#smarthome {
+    left: 2480px;
+    top: 380px;
+    height: 200px;
+}
+#googlecar {
+    left: 2800px;
+    width: 220px;
+    top: 10px;
+}
+#deepmind {
+    left: 2990px;
+    top: 400px;
+    width: 350px;
+}
+#kinect {
+    left: 3000px;
+    top: 490px;
+    height: 90px;
+}
+#watson {
+    left: 3320px;
+    top: 0px;
+    height: 10px;
+    width: 200px;
+    height: 200px;
+}
+#siri {
+    left: 3340px;
+    top: 415px;
+    width: 150px;
+}
+#japan {
+    left: 3530px;
+    top: 10px;
+    width: 200px;
+}
+#go {
+    left: 3700px;
+    top: 420px;
+    width: 240px;
+}
+#explosion {
+    width: 250px;
+    left: 3725px;
+    top: 64px;
+}
+
+
+/* Tekst */
+.tekstboble {
+    font-family: sans-serif;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    background-color: white;
+    display: none;
+    
+}
+
+#asimotext{
+    left: 330px;
+    top: 50px;
+    transform: rotate(20deg);
+    display: block;
+    color: red;
+}
+#turingtesttext{
+    top: 430px;
+    left: 20px;
+    animation: textfade 1s forwards paused;
+}
+#mitaitext{
+    top: 80px;
+    left: 410px;
+    animation: textfade 1s forwards paused;
+}
+#backgammontext{
+    top: 420px;
+    left: 750px;
+    animation: textfade 1s forwards paused;
+}
+#pollytext{
+    top: 100px;
+    left: 1000px;
+    z-index: 1;
+    animation: textfade 1s forwards paused;
+}
+#car1text{
+    top: 520px;
+    left: 1300px;
+    animation: textfade 1s forwards paused;
+}
+#robotoystext{
+    top: 220px;
+    left: 1660px;
+    z-index: 1;
+    animation: textfade 1s forwards paused;
+}
+#roombatext {
+    left: 2160px;
+    top: 430px;
+    animation: textfade 1s forwards paused;
+}
+#marstext{
+    left: 2230px;
+    top: 160px;
+    z-index: 1;
+    animation: textfade 1s forwards paused;
+}
+#asimo2text {
+    width: 100px;
+    left: 2500px;
+    top: 100px;
+    font-size: 2em;
+    animation: textfade 1s forwards paused;
+}
+#googlecartext{
+    left: 2670px;
+    top: 150px;
+    animation: textfade 1s forwards paused;
+}
+#deepmindtext{
+    left: 2880px;
+    top: 270px;
+    animation: textfade 1s forwards paused;
+}
+#watsontext{
+    left: 3100px;
+    top: 50px;
+    animation: textfade 1s forwards paused;
+}
+#siritext{
+    left: 3450px;
+    top: 310px;
+    animation: textfade 1s forwards paused;
+}
+#gotext{
+    left: 3550px;
+    top: 340px;
+    animation: textfade 1s forwards paused;
+}
+
+#infoboble1, #infoboble2, #infoboble3 {
+    font-size: 2em;
+    display: block;
+    
+    
+}
+#infoboble1 {
+    left: 54px;
+    top: -10px; 
+}
+#infoboble2 {
+    left: 459px;
+    top: 350px;
+}
+#infoboble3 {
+    font-size: 3em;
+    padding: 2px;
+    width: 120px;
+    top: 90px;
+    left: 3790px;
+    color: black;
+}
+
+/* Animasjoner */
+@keyframes textfade{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes asimofloat{
+    0% {transform: rotate(20deg);}
+    50% {transform: rotate(-20deg);}
+    100% {transform: rotate(20deg);}
+}
+
+.link:hover {
+    padding: 3px;
+}
+
+#mitai:hover +#mitaitext {
+    display: block;
+    animation-play-state: running;
+}
+#turingtest:hover +#turingtesttext {
+    display: block;
+    animation-play-state: running;
+}
+#backgammon:hover +#backgammontext {
+    display: block;
+    animation-play-state: running;
+}
+#polly:hover +#pollytext {
+    display: block;
+    animation-play-state: running;
+}
+#car1:hover +#car1text {
+    display: block;
+    animation-play-state: running;
+}
+#robotoys:hover  #robotoystext {
+    display: block;
+    animation-play-state: running;
+}
+#roomba:hover +#roombatext {
+    display: block;
+    animation-play-state: running;
+}
+#mars:hover +#marstext {
+    display: block;
+    animation-play-state: running;
+}
+#asimo2:hover +#asimo2text {
+    display: block;
+    animation-play-state: running;
+}
+#googlecar:hover +#googlecartext {
+    display: block;
+    animation-play-state: running;
+}
+#deepmind:hover +#deepmindtext {
+    display: block;
+    animation-play-state: running;
+}
+#watson:hover +#watsontext {
+    display: block;
+    animation-play-state: running;
+}
+#siri:hover +#siritext {
+    display: block;
+    animation-play-state: running;
+}
+#go:hover +#gotext{
+    display: block;
+    animation-play-state: running;
+}

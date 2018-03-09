@@ -1,0 +1,339 @@
+/*Header Starts*/
+#header {
+    position: relative;
+    width: inherit;
+    height: 50px;
+    color: black;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.9;
+    margin-top: 0px;
+}
+
+#header_tekst {
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: -15px;
+    font-family: sans-serif;
+}
+
+#back {
+    left: 10px;
+    position: absolute;
+    height: 30px;
+    top: 10px;
+}
+
+
+
+/*Header slutter*/
+#container{
+    width: 978px;
+    height: 600px;
+    margin: auto;
+    background-color: rgb(150, 200, 250);
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+#container *{
+    position: absolute;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#inngang{
+    width:978px;
+    height:600px;
+    
+}
+
+
+
+/*Robot Resepsjonist_1 kode starter*/
+#robot1{
+   right: 240px;
+   top: 200px;
+   height: 30%;
+   width: 10%;
+   transform: rotate(-11deg); 
+   
+}
+
+#boble1 {
+    background-color: antiquewhite;
+    font-size: 1.2em;
+    top: 100px;
+    width: 160px;
+    right:90px;
+    border-radius: 10px;
+    padding: 5px;
+    animation-delay: 2s;
+   
+}
+/*Robot Resepsjonist_1 kode slutter*/
+
+
+
+
+/*Robot Resepsjonist_2 kode starter*/
+#robot2 {
+   right: 394px;
+   top: 213px;
+   height: 25%;
+   width: 8%;
+   transform: rotate(3deg);
+   
+}
+
+#boble2{
+    background-color: ghostwhite;
+    font-size: 1.2em;
+    top: 95px;
+    width: 160px;
+    right:460px;
+    border-radius: 10px;
+    padding: 5px;
+    animation-delay: 1s;   
+
+}
+
+.snakkebobler {
+    animation-name: synlig;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
+}
+
+/*Robot Resepsjonist_2 kode slutter*/
+
+
+
+
+/*HelloKitty's kode starter*/
+
+#helloKitty {
+   height: 100%;
+   transform: rotate(-3deg);
+    
+}
+
+#helloKitty2{
+   right: 550px;
+   top: 370px;
+   height: 25%;
+   width: 11%;
+  
+}
+
+
+#helloBoble {
+    background-color: hotpink;
+    font-size: 1.1em;
+    top: -115px;
+    width: 160px;
+    right:20px;
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    
+    
+}
+
+#helloKitty2:hover #helloBoble {
+    display: block;
+    
+}
+
+/*HelloKitty's kode slutter*/
+
+
+
+
+/*NyanCat kode starter*/
+#nyanCat {
+   height: 100%;
+    
+}
+
+#nyanCat2{
+   top:2px;
+   height: 18%;
+   width: 35%;
+  
+    
+}
+
+#nyanBoble {
+    background-color: limegreen;
+    font-size: 1.1em;
+    top: 10px;
+    width: 160px;
+    left:350px;
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    
+}
+
+#nyanCat2:hover #nyanBoble{
+    display: block;
+    
+}
+/*NyanCat Kode slutter*/
+
+
+
+
+/*Lion Kode starter*/
+
+#lion {
+   height: 100%;
+   
+}
+
+#lion2{
+   right: 100px;
+   top: 510px;
+   height: 13%;
+   width: 10%;
+    
+}
+
+#lionBoble{
+    background-color: sandybrown;
+    font-size: 1.1em;
+    top: -150px;
+    width: 160px;
+    right: -85px;
+    padding:5px;
+    display: none;
+    border-radius: 10px;
+}
+
+#lion2:hover #lionBoble{
+    display:block;
+}
+
+/*Lion Kode slutter*/
+
+
+
+
+/*Kanin kode starter*/
+#kanin {
+   height: 100%;
+  
+}
+
+#kanin2{
+   right: 700px;
+   top: 440px;
+   height: 15%;
+   width: 7%;
+   
+}
+
+#kaninBoble{
+    background-color: coral;
+    font-size: 1.1em;
+    top: 40px;
+    width: 150px;
+    right:70px;
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+}
+
+#kanin2:hover #kaninBoble {
+    display: block;
+    
+}
+/*Kanin Kode slutter*/
+
+
+
+
+/*Asimo kode starter*/
+#asimo {
+   height: 100%;
+    
+}
+
+#asimo2 {
+   top: 365px;
+   left: 420px;
+   height: 70%;
+   width: 23%;
+   
+
+}
+
+#asimoBoble {
+    background-color: floralwhite;
+    font-size: 1.1em;
+    top: -30px;
+    width: 160px;
+    right: -140px;
+    padding: 5px;
+    display: none;
+    border-radius: 10px;
+    
+}
+
+#asimo2:hover #asimoBoble {
+    display: block;
+    
+    
+}
+
+/*Asimo kode slutter*/
+
+/*animasjon kode starter*/
+
+@keyframes synlig {
+    0% {
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+    
+
+    
+/*animasjon kode slutter*/
+    
+}
+
+
+/*End of code*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
